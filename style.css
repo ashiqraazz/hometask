@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+ul,ol {
+    list-style-type: none;
+}
+a:hover,
+a{
+    text-decoration: none;
+}
+
+
+
+
+/*Home style start */
+#home {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: crimson;
+    color: #000;
+    background-size: 100% 100%;
+}
+.navbar {
+    background: #fff;
+}
+.navbar-nav li a {
+    display: block;
+    padding: 0 10px;
+} 
+.nav-link {
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#slider {
+    width: 100%;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+
+.carousel-caption h3 {
+    font-size: 42px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*Home section End */
+
+#about {
+    padding: 50px;
+    color: #555;
+}
+#about h2::after {
+    background-color: #007BFF;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.about-content {
+    padding-top: 20px;
+}
+
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress-bar {
+    border-radius: 16px;
+}
+
+.progress {
+    border-radius: 16px!important;
+    margin-bottom: 20px;
+}
+
+/*about Part end */
+/*service part start */
+
+#services {
+background-image: linear-gradient(to bottom, rgba(45, 52, 54, 0.9), rgba(44, 62, 80, 0.6)),url('img/services.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff!important;
+    
+    
+}
+#services h2 {
+    color: #efefef!important;
+    text-align: center;
+    padding-bottom: 10px;
+    
+    
+}
+#services h2::after{
+    background-color: #007BFF;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+    
+}
+.services {
+    margin-top: 40px;
+}
+.services .icon {
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    
+}
+.services h3 {
+    font-size: 24px!important;
+}
+.fa {
+    display: block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#services p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.services .col-md-3:hover {
+    background-color: #007BFF;
+    cursor: pointer;
+    transition: all linear 0.4s;
+}
+
+
+/*service part end */
+
+/*team section start */
+#team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+h1 {
+    text-align: center;
+    color: #555!important;
+    padding-bottom: 10px;
+}
+h1::after{
+    content: "";
+    display: block;
+    background-color: #007BFF;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+    
+} 
+.profile-pic {
+    margin-top: 25px;
+}
+.profile-pic .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+    
+}
+.profile-pic .img-box img{
+   filter: grayscale(1);
+    
+}
+.profile-pic .img-box img:hover{
+   filter: grayscale(0);
+    cursor: pointer;
+    
+}
+.profile-pic h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #007bff !important;
+}
+.profile-pic h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #007bff !important;
+}
+
+#team .fa {
+    height: 25px;
+    width: 25px;
+    color: #007bff !important;
+    background: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+.img-box ul {
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li {
+    padding: 5px;
+    display: inline-block;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box ul, .img-box ul li {
+    transition: all linear 0.5s;
+}
+
+
+/*team section End */
+
+#promo {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('img/promo.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+
+/*Price plan section start */
+#price {
+    padding: 40px 0;
+    background: #efefef;
+}
+.single-price {
+    display: inline;
+    float: left;
+    margin: 10px auto;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.single-price:hover {
+    box-shadow: 0 2px 20px #333;
+}
+.price-head {
+    background-color: #f3218c;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+.price-head h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.price-head p {
+    font-size: 25px;
+    color: #ccc;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#price span {
+    font-size: 15px;
+}
+
+.price-content {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    
+}
+.price-content ul li {
+    border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    
+}
+.price-content ul li:last-child {
+    border: none;
+}
+
+.fa-check-circle {
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fa-times-circle {
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.price-button {
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+.buy-btn {
+    background-color: #2196f3;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 50px;
+    transition: 0.5s;
+    color: #fff;
+}
+.buy-btn:hover {
+    border-color: 1px solid #fff;
+    background-color: #3f51b5;
+    
+}
+
+/*Price plan section End */
+#testimonial {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#testimonial .row {
+    margin-top: 30px;
+}
+.col-md-4 {
+    margin: 40px auto;
+}
+.user {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile {
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+}
+.profile img {
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid #fff;
+    
+}
+.profile h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #007bff;
+}
+#testimonial span {
+    font-size: 12px;
+    color: #333;
+    
+}
+blockquote {
+    font-size: 16px;
+    line-height: 30px;
+    
+}
+blockquote::before {
+    content: open-quote;
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+    
+}
+blockquote::after {
+    content: close-quote;
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    left: 10px;
+    bottom: -15px;
+    right: 5px;
+    
+}
+.profile:hover {
+    box-shadow: 0 0 15px 5px rgba(52, 73, 94,1.0);
+    cursor: pointer;
+    transition: all linear 0.5s;
+    
+}
+
+/*testimonial part end */
+/*Contact Form*/
+#contact {
+    
+    ০padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #efefef;
+    color: #777;
+    
+}
+.contact-form {
+    padding: 15px;
+}
+.form-control {
+    border-radius: 0 !important;
+    border: none !important;
+}
+::placeholder {
+    color: #999 !important;
+    text-align: center;
+}
+
+
+
+
+/*Contact Form*/
+
+.follow {
+    background-color: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+
+.contact-info .fa{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+    display: contents;
+    
+}
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+}
+.fa-heart-o {
+    margin: 3px;
+    color: crimson;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
